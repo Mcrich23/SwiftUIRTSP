@@ -11,6 +11,7 @@
 		22B4EC4F2AC502D300574270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4EC4E2AC502D300574270 /* ContentView.swift */; };
 		22B4EC512AC502D500574270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B4EC502AC502D500574270 /* Assets.xcassets */; };
 		22B4EC542AC502D500574270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B4EC532AC502D500574270 /* Preview Assets.xcassets */; };
+		CC3C03BEBF4C5BC455D10DCA /* Pods_SwiftUIVLC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4F0EEE182EE96CE627F71 /* Pods_SwiftUIVLC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,9 @@
 		22B4EC4E2AC502D300574270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22B4EC502AC502D500574270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B4EC532AC502D500574270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E5D5DAB4E84B6EA8728B18F /* Pods-SwiftUIVLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIVLC.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIVLC/Pods-SwiftUIVLC.release.xcconfig"; sourceTree = "<group>"; };
+		C8D66E1BD5640BBFD5BE88BA /* Pods-SwiftUIVLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIVLC.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIVLC/Pods-SwiftUIVLC.debug.xcconfig"; sourceTree = "<group>"; };
+		DCB4F0EEE182EE96CE627F71 /* Pods_SwiftUIVLC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIVLC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3C03BEBF4C5BC455D10DCA /* Pods_SwiftUIVLC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				22B4EC4B2AC502D300574270 /* SwiftUIVLC */,
 				22B4EC4A2AC502D300574270 /* Products */,
+				33A733E9D80CE878D23D35AB /* Pods */,
+				8C04C13C5396C1EF60750474 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		33A733E9D80CE878D23D35AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8D66E1BD5640BBFD5BE88BA /* Pods-SwiftUIVLC.debug.xcconfig */,
+				4E5D5DAB4E84B6EA8728B18F /* Pods-SwiftUIVLC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C04C13C5396C1EF60750474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4F0EEE182EE96CE627F71 /* Pods_SwiftUIVLC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22B4EC572AC502D500574270 /* Build configuration list for PBXNativeTarget "SwiftUIVLC" */;
 			buildPhases = (
+				974E9D89144CB5E69297956F /* [CP] Check Pods Manifest.lock */,
 				22B4EC452AC502D300574270 /* Sources */,
 				22B4EC462AC502D300574270 /* Frameworks */,
 				22B4EC472AC502D300574270 /* Resources */,
+				7D8183D97583958AD7E3BBFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D8183D97583958AD7E3BBFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIVLC/Pods-SwiftUIVLC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIVLC/Pods-SwiftUIVLC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIVLC/Pods-SwiftUIVLC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		974E9D89144CB5E69297956F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIVLC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22B4EC452AC502D300574270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,7 +250,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +313,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +334,7 @@
 		};
 		22B4EC582AC502D500574270 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D66E1BD5640BBFD5BE88BA /* Pods-SwiftUIVLC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -280,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +365,7 @@
 		};
 		22B4EC592AC502D500574270 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5D5DAB4E84B6EA8728B18F /* Pods-SwiftUIVLC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +380,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
