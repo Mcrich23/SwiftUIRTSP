@@ -28,7 +28,8 @@ struct RTSPStreamView: View {
     private func setupPlayer() {
         // Create AVPlayer and set its player item to the RTSP stream
         let playerItem = AVPlayerItem(url: rtspURL)
-        player = AVPlayer(playerItem: playerItem)
+        let player = AVPlayer(playerItem: playerItem)
+        self.player = player
 
         // Create AVPlayerLayer for video rendering
         let layer = AVPlayerLayer(player: player)
@@ -40,7 +41,7 @@ struct RTSPStreamView: View {
         pipViewController = AVPictureInPictureController(playerLayer: layer)
         
         // Start streaming
-        player?.play()
+        player.play()
     }
 
     var body: some View {
@@ -55,7 +56,7 @@ struct RTSPStreamView: View {
 
 struct ContentView: View {
     var body: some View {
-        RTSPStreamView(rtspURL: URL(string: "YOUR_RTSP_STREAM_URL_HERE")!)
+        RTSPStreamView(rtspURL: URL(string: "rtsp://192.168.185.180")!)
             .frame(width: 320, height: 240) // Set your desired frame size
     }
 }

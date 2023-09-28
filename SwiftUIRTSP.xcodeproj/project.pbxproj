@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		228C102A2AC5211900DDC41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22B4EC492AC502D300574270 /* SwiftUIRTSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIRTSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B4EC4C2AC502D300574270 /* SwiftUIRTSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRTSP.swift; sourceTree = "<group>"; };
 		22B4EC4E2AC502D300574270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		22B4EC4B2AC502D300574270 /* SwiftUIRTSP */ = {
 			isa = PBXGroup;
 			children = (
+				228C102A2AC5211900DDC41F /* Info.plist */,
 				22B4EC4C2AC502D300574270 /* SwiftUIRTSP.swift */,
 				22B4EC4E2AC502D300574270 /* ContentView.swift */,
 				22B4EC502AC502D500574270 /* Assets.xcassets */,
@@ -285,6 +287,8 @@
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIRTSP/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network access is needed for RTSP";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +319,8 @@
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIRTSP/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network access is needed for RTSP";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
