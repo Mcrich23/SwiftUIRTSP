@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SwiftUIVLC
+//  SwiftUIRTSP
 //
 //  Created by Morris Richman on 9/27/23.
 //
